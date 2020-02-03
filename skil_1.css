@@ -1,0 +1,19 @@
+
+.top{
+    background-color: #AED8E6;
+    text-align: center;
+    padding-bottom: 15px; /* skoða padding á top betur */
+    border: solid black;
+    border-radius: 10px;
+}
+
+
+ul li {
+    display: inline-block;
+    padding-top: 0px;
+}
+
+ul li a{
+    color: black;
+    width: 50px;
+}
