@@ -1,19 +1,35 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .top{
     background-color: #AED8E6;
     text-align: center;
     padding-bottom: 15px; /* skoða padding á top betur */
-    border: solid black;
+    border: solid black 1.5px;
     border-radius: 10px;
 }
 
-
-ul li {
-    display: inline-block;
-    padding-top: 0px;
+div button{
+    background-color: transparent;
+    border: none;
 }
 
-ul li a{
+div input{
+    color: gray;
+    padding: 0.5px,0.5px;
+    border: solid 1px;
+    border-color: lightgray;
+    
+}
+
+div a{
     color: black;
-    width: 50px;
+    font-size: 7mm;
+    margin: 50px;
 }
+
+h3{
+    white-space: nowrap;
+}
+
