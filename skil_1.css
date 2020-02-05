@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+.hirefire{
+    margin-bottom: 3%;
+}
+
 .top{
     background-color: #AED8E6;
     text-align: center;
@@ -36,23 +40,23 @@ h3{
     white-space: nowrap;
 }
 
-.p {
+.pers {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center; 
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.perBox{
+    width: 20.5%;
     background-color: #AED8E6;
     border: solid black 1px;
     border-radius: 10px;
-    height: 200px;
+    height: 150px;
     font-size: 10px;
-    margin: 0px;
+    margin: 1%;
 }
 
-div{
-    margin: 0px;
-}
 
 
 header{
@@ -61,10 +65,13 @@ header{
 
 
 img{
-    float: inline-start;
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    margin-left: 8%;
 }
 
-@media screen and (max-width: 650px){
+/* @media screen and (max-width: 650px){
     #Person{
         width: 400px;
     }
@@ -73,7 +80,7 @@ img{
     }
 }
 
-@media screen and (max-width: 651px){
+@media screen and (min-width: 651px) and (max-width: 1000px){
     #Person{
         width: 300px;
     }
@@ -83,15 +90,6 @@ img{
     }
 }
 
-@media screen and (max-width: 1000px){
-    #Person{
-        width: 300px;
-    }
-    #Personimg{
-        width: 65px;
-        height: auto;
-    }
-}
 
 @media screen and (min-width: 1001px){
     #Person{
@@ -101,17 +99,19 @@ img{
         width: 45px;
         height: auto;
     }
-}
+} */
 
 .bottom{
     display: flex;
-    display: inline-block;
+    justify-content: center
+}
+
+.infoBox{
     background-color: #AED8E6;
     padding: 30px; /* skoða padding á top betur */
     border: solid black 1.5px;
     border-radius: 10px;
     width: 80%;
-
 }
 
 .AboutUs{
@@ -124,4 +124,17 @@ img{
     width: 50%;
     float: right;
     text-align: right;
+}
+
+.Contact a{
+    margin: 0px;
+    font-size: 16px;
+}
+
+.name{
+    float: left;
+}
+
+.info{
+    float: right;
 }
