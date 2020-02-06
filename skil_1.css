@@ -11,7 +11,7 @@
 .top{
     background-color: #AED8E6;
     text-align: center;
-    padding-bottom: 15px; /* skoða padding á top betur */
+    padding-bottom: 15px; /* skoÃ°a padding Ã¡ top betur */
     border: solid black 1.5px;
     border-radius: 10px;
 }
@@ -40,8 +40,9 @@ h3{
     white-space: nowrap;
 }
 
-.pers {
+.allPerson{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 1%;
@@ -50,13 +51,30 @@ h3{
 .perBox{
     width: 20.5%;
     background-color: #AED8E6;
-    border: solid black 1px;
+    border: solid black 1.5px;
     border-radius: 10px;
     height: 150px;
     font-size: 10px;
     margin: 1%;
 }
 
+.left {
+    width: 30%;
+    display: inline-block;
+
+}
+
+.right {
+    width: 70%;
+    margin-top: 7%;
+    font-size: 130%;
+    float: right;
+}
+
+.left h2 {
+    font-size: 150%;
+    text-align: center;
+}
 
 
 header{
@@ -65,42 +83,12 @@ header{
 
 
 img{
-    width: 30%;
+    width: 80%;
     height: auto;
-    margin: 2%;
-    margin-left: 8%;
+    margin-left: 15%;
+    margin-top: 5%;
+
 }
-
-/* @media screen and (max-width: 650px){
-    .pers{
-        width: 400px;
-        flex-direction: row;
-    }
-    .img{
-        display: none;
-    }
-}
-
-@media screen and (min-width: 651px) and (max-width: 1000px){
-    .perBox{
-        width: 300px;
-    }
-    .img{
-        width: 65px;
-        height: auto;
-    }
-}
-
-
-@media screen and (min-width: 1001px){
-    .perBox{
-        width: 220px;
-    }
-    .img{
-        width: 45px;
-        height: auto;
-    }
-}  */
 
 .bottom{
     display: flex;
@@ -109,7 +97,7 @@ img{
 
 .infoBox{
     background-color: #AED8E6;
-    padding: 30px; /* skoða padding á top betur */
+    padding: 30px; /* skoÃ°a padding Ã¡ top betur */
     border: solid black 1.5px;
     border-radius: 10px;
     width: 80%;
@@ -132,24 +120,45 @@ img{
     font-size: 16px;
 }
 
-.name h2{
-    float: left;
-    padding-left: 13%;
+.hamburger{
+    display: none;
 }
 
-.info{
-    float: right;
+
+@media (min-width: 1001px){
+    .perBox{
+        height: 200px;
+        width: 220px;
+        flex-direction: row;
+    }
 }
 
-.column{
-    float: left;
+@media (max-width: 1000px){
+    .perBox{
+        height: 200px;
+        width: 400px;
+        flex-direction: column;
+    }
 }
 
-.left{
-    
-    width: 30%;
-}
-
-.right{
-    width: 70%;
+@media (max-width: 650px){
+    .perBox{
+        height: 200px;
+        width: 330px;
+        flex-direction: row;
+    }
+    img{
+        display: none;
+    }
+    .top .hirefire{
+        display: none;
+    }
+    .top .Search{
+        display: none;
+    }
+    .hamburger{
+        display: contents;
+        font-size: 50px;
+        justify-content: center;
+    }
 }

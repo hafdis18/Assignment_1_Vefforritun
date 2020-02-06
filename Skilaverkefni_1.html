@@ -1,117 +1,109 @@
 <!DOCTYPE html>
 
-<html lang="en">
-
-    <head>
-        <title>Assignment_1</title>
-        <link rel = "stylesheet" type = "text/css" href= "skil_1.css">
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        <header>
-            <div class="top">
-                <div class="hirefire">
-                    <a href="#">Hire</a>
-                    <a href="#">Fire</a>
-                </div>
-                <div class="Search">
-                    <input type="text" name="Search" value="Search Person.."><button>Search</button>
-                </div>
+<html lang="en"><head>
+    <title>Assignment_1</title>
+    <link rel="stylesheet" type="text/css" href="skil_1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="hirefire">
+                <a href="#">Hire</a>
+                <a href="#">Fire</a>
             </div>
-        </header>
-        <div class="pers" id="Person">
-            <div class="perBox" id="P1">
-                <div class="name">
-                    <img alt="P1Img" src="pers1.png">
-                    <div class="name">
-                        <h2>Pete</h2>  
-                    </div>
-                </div>
-                <div class="info">
-                    <p><b>Role:</b>Accountant</p>
-                    <br>
-                    <p><b>Department:</b>Finance</p>
-                    <br>
-                    <p><b>Joined:</b>Jan 2005</p>
-                </div>
+            <div class="Search">
+                <input type="text" name="Search" value="Search Person.."><button>Search</button>
             </div>
-        
-
-
-            <div class="perBox" id="P2">
-                <img alt="P2Img" src="pers2.png">
-                <div class="name">
-                    <h2>Stacy</h2> 
-                </div> 
-                <div class="info">
-                    <p><b>Role:</b>Team lead</p>
-                    <br>
-                    <p><b>Department:</b>Tech</p>
-                    <br>
-                    <p><b>Joined:</b>Dec 2018</p>
-                </div>
+            <div class="hamburger">
+                <p>&equiv;</p>
             </div>
+        </div>
+    </header>
 
-            <div class="perBox" id="P3">
-                <img alt="P3Img" src="pers3.png">
-                <div class="name">
-                    <h2>John</h2> 
-                </div>
-                <div class="info">
-                    <p><b>Role:</b>Admin</p>
-                    <br>
-                    <p><b>Department:</b>IT Support</p>
-                    <br>
-                    <p><b>Joined:</b>Apr 2018</p>
-                </div>
+    <div class="allPerson">
+        <div class="perBox">
+            <div class="left">
+                <img alt="peteImg" src="pers1.png">
+                <h2>Pete</h2> 
             </div>
-
-            <div class="perBox" id="P4">
-                <img alt="P4Img" src="pers4.png">
-                <div class="name">
-                    <h2>Hans</h2>  
-                </div>
-                <div class="info">
-                    <p><b>Role:</b>Developer</p>
-                    <br>
-                    <p><b>Department:</b>Tech</p>
-                    <br>
-                    <p><b>Joined:</b>Dec 2015</p>
-                </div>
-            </div>
-
-            <div class="perBox" id="P5">
-                <img alt="P5Img" src="pers5.png">
-                <div class="name">
-                    <h2>Janet</h2> 
-                </div> 
-                <div class="info">
-                    <p><b>Role:</b>Project Lead</p>
-                    <br>
-                    <p><b>Department:</b>Management</p>
-                    <br>
-                    <p><b>Joined:</b>Mar 2002</p>
-                </div>
+            <div class="Column right">
+                <p><b>Role:</b> Accountant</p><br>
+                <p><b>Department:</b> Finance</p><br>
+                <p><b>Joined:</b> Jan 2005</p>
             </div>
         </div>
 
-        <div class="bottom">
-            <div class="infoBox">
-                <div class="AboutUs">
-                    <h3>ABOUT US</h3><br>
-                    <p>Staff Inc. is dedicated to making your management life easier!
-                            All your employees' details on a single screen. Hiring, firing, retiring - just a click away.</p>
-                </div>
-                <div class="Contact">
-                    <h3>CONTACT</h3><br>
-                    <p>Staff Inc.</p>
-                    <p>Industrial Ave 201</p>
-                    <p>1102 Down Town</p>
-                    <p>Tel: 001 555 444 12</p>
-                    <a href="mailto:contact@staff.inc">contact@staff.inc</a>
-                </div>
+        <div class="perBox">
+            <div class="left">
+                <img alt="stacyImg" src="pers2.png">
+                <h2>Stacy</h2> 
+            </div> 
+            <div class="right">
+                <p><b>Role:</b> Team lead</p><br>
+                <p><b>Department:</b> Tech</p><br>
+                <p><b>Joined:</b> Dec 2018</p>
             </div>
         </div>
 
-    </body>
+        <div class="perBox">
+            <div class="left">
+                <img alt="johnImg" src="pers3.png">
+                <h2>John</h2> 
+            </div>
+            <div class="right">
+                <p><b>Role:</b> Admin</p><br>
+                <p><b>Department:</b> IT Support</p><br>
+                <p><b>Joined:</b> Apr 2018</p>
+            </div>
+        </div>
+
+
+        <div class="perBox">
+            <div class="left">
+                <img alt="hansImg" src="pers4.png">
+                <h2>Hans</h2>  
+            </div>
+            <div class="right">
+                <p><b>Role:</b> Developer</p><br>
+                <p><b>Department:</b> Tech</p><br>
+                <p><b>Joined:</b> Dec 2015</p>
+            </div>
+        </div>
+
+        <div class="perBox">
+            <div class="left">
+                <img alt="janetImg" src="pers5.png">
+                <h2>Janet</h2> 
+            </div> 
+            <div class="right">
+                <p><b>Role:</b> Project Lead</p><br>
+                <p><b>Department:</b> Management</p><br>
+                <p><b>Joined:</b> Mar 2002</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="infoBox">
+            <div class="AboutUs">
+                <h3>ABOUT US</h3><br>
+                <p>Staff Inc. is dedicated to making your management life easier!
+                        All your employees' details on a single screen. Hiring, firing, retiring - just a click away.</p>
+            </div>
+            <div class="Contact">
+                <h3>CONTACT</h3><br>
+                <p>Staff Inc.</p>
+                <p>Industrial Ave 201</p>
+                <p>1102 Down Town</p>
+                <p>Tel: 001 555 444 12</p>
+                <a href="mailto:contact@staff.inc">contact@staff.inc</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
 </html>
