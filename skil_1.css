@@ -72,19 +72,20 @@ img{
 }
 
 /* @media screen and (max-width: 650px){
-    #Person{
+    .pers{
         width: 400px;
+        flex-direction: row;
     }
-    #Personimg{
+    .img{
         display: none;
     }
 }
 
 @media screen and (min-width: 651px) and (max-width: 1000px){
-    #Person{
+    .perBox{
         width: 300px;
     }
-    #Personimg{
+    .img{
         width: 65px;
         height: auto;
     }
@@ -92,14 +93,14 @@ img{
 
 
 @media screen and (min-width: 1001px){
-    #Person{
+    .perBox{
         width: 220px;
     }
-    #Personimg{
+    .img{
         width: 45px;
         height: auto;
     }
-} */
+}  */
 
 .bottom{
     display: flex;
@@ -131,10 +132,24 @@ img{
     font-size: 16px;
 }
 
-.name{
+.name h2{
     float: left;
+    padding-left: 13%;
 }
 
 .info{
     float: right;
+}
+
+.column{
+    float: left;
+}
+
+.left{
+    
+    width: 30%;
+}
+
+.right{
+    width: 70%;
 }
