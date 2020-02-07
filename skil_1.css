@@ -11,7 +11,7 @@
 .top{
     background-color: #AED8E6;
     text-align: center;
-    padding-bottom: 15px; /* skoÃ°a padding Ã¡ top betur */
+    padding-bottom: 15px; /* skoÃƒÂ°a padding ÃƒÂ¡ top betur */
     border: solid black 1.5px;
     border-radius: 10px;
 }
@@ -53,26 +53,25 @@ h3{
     background-color: #AED8E6;
     border: solid black 1.5px;
     border-radius: 10px;
-    height: 150px;
+    height: 200px;
     font-size: 10px;
-    margin: 1%;
+    margin: 2%;
 }
 
 .left {
     width: 30%;
     display: inline-block;
-
 }
 
 .right {
     width: 70%;
     margin-top: 7%;
-    font-size: 130%;
+    font-size: 17px;
     float: right;
 }
 
 .left h2 {
-    font-size: 150%;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -85,19 +84,20 @@ header{
 img{
     width: 80%;
     height: auto;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 5%;
 
 }
 
 .bottom{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .infoBox{
     background-color: #AED8E6;
-    padding: 30px; /* skoÃ°a padding Ã¡ top betur */
+    padding: 30px; 
     border: solid black 1.5px;
     border-radius: 10px;
     width: 80%;
@@ -124,27 +124,33 @@ img{
     display: none;
 }
 
+.name {
+    display: none;
+}
+
+.smallsize {
+    display: none;
+}
+
 
 @media (min-width: 1001px){
     .perBox{
-        height: 200px;
         width: 220px;
         flex-direction: row;
+        margin: 1%;
     }
 }
 
 @media (max-width: 1000px){
     .perBox{
-        height: 200px;
-        width: 400px;
-        flex-direction: column;
+        width: 300px;
+        margin: 1.7%;
     }
 }
 
 @media (max-width: 650px){
     .perBox{
-        height: 200px;
-        width: 330px;
+        width: 400px;
         flex-direction: row;
     }
     img{
@@ -156,9 +162,76 @@ img{
     .top .Search{
         display: none;
     }
+    .left {
+        display: none;
+    }
     .hamburger{
         display: contents;
         font-size: 50px;
         justify-content: center;
+    }
+    .right{
+        display: none;
+    }
+    .smallsize{ 
+        display: contents;
+        text-align: center;
+        font-size: 17px;
+    }
+    .smallsize h2 {
+        margin-top: 20px;
+    }
+    .smallsize p {
+        margin-top: 5px;
+    }
+}
+
+@media only print {
+    *{
+        font-family: ibarra real nova;
+    }
+    .perBox{
+        width: 300px;
+        margin: 0%;
+        margin-left: 0.25%;
+        margin-right: 0.25%;
+    }
+    img{
+        display: none;
+    }
+    header {
+        padding-bottom: 0%;
+    }
+    .left {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    .smallsize{ 
+        display: contents;
+        text-align: center;
+        font-size: 17px;
+    }
+    .smallsize h2 {
+        margin-top: 20px;
+    }
+    .smallsize p {
+        margin-top: 5px;
+    }
+    .bottom {
+        margin-top: 0%;
+    }
+    .allPerson {
+        margin: 0%;
+    }
+    .top .hirefire{
+        display: contents;
+    }
+    .top .Search{
+        display: contents;
+    }
+    .top .hamburger {
+        display: none;
     }
 }
