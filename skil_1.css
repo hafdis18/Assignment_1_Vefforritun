@@ -1,7 +1,5 @@
-*{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0px;
-    padding: 0px;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hirefire{
@@ -55,7 +53,7 @@ h3{
     border-radius: 10px;
     height: 200px;
     font-size: 10px;
-    margin: 2%;
+    /* margin: 2%; */
 }
 
 .left {
@@ -63,16 +61,23 @@ h3{
     display: inline-block;
 }
 
-.right {
-    width: 70%;
-    margin-top: 7%;
-    font-size: 17px;
-    float: right;
+
+.left p{
+    font-size: 20px;
+    margin-left: 5px;
 }
 
-.left h2 {
-    font-size: 15px;
-    text-align: center;
+
+
+.right {
+    width: 60%;
+    font-size: 16px;
+    float: right;
+    margin-right: 8px;
+}
+
+span{
+    font-weight: 500;
 }
 
 
@@ -96,28 +101,31 @@ img{
 }
 
 .infoBox{
+    display: flex;
     background-color: #AED8E6;
     padding: 30px; 
     border: solid black 1.5px;
     border-radius: 10px;
-    width: 80%;
 }
 
-.AboutUs{
+.infoBox > div {
     width: 50%;
-    float: left;
-    text-align: left;
 }
+
 
 .Contact{
-    width: 50%;
-    float: right;
     text-align: right;
 }
 
-.Contact a{
-    margin: 0px;
-    font-size: 16px;
+.Contact p {
+    margin: 0px 0px 5px 0px;
+}
+
+.Contact a {
+    text-decoration: underline;
+    font-size: initial;
+    text-align: right;
+    margin: 0px 0px 5px 0px;
 }
 
 .hamburger{
@@ -135,9 +143,13 @@ img{
 
 @media (min-width: 1001px){
     .perBox{
-        width: 220px;
+        width: 220px; 
         flex-direction: row;
         margin: 1%;
+    }
+    .infoBox{
+        width: 800px;
+        height: 200px;
     }
 }
 
@@ -146,12 +158,35 @@ img{
         width: 300px;
         margin: 1.7%;
     }
+     .infoBox{
+         padding: 20px;
+         width: 757px;
+         height: 177px;
+     }
+}
+
+@media (min-width: 651px){
+    .perBox{
+        width:300px;
+        height:200px;
+        flex-direction:row;
+        flex-wrap:wrap;
+
+    }
+    .infoBox{
+        padding: 20px;
+        width: 477px;
+        height: 217px;
+    }
 }
 
 @media (max-width: 650px){
     .perBox{
         width: 400px;
-        flex-direction: row;
+        /* flex-direction: row; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     img{
         display: none;
@@ -173,22 +208,23 @@ img{
     .right{
         display: none;
     }
-    .smallsize{ 
-        display: contents;
+    .smallsize{
         text-align: center;
         font-size: 17px;
+        display: block;
     }
     .smallsize h2 {
         margin-top: 20px;
     }
     .smallsize p {
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
 
 @media only print {
-    *{
-        font-family: ibarra real nova;
+    body{
+        font-family: 'Ibarra Real Nova', serif;
     }
     .perBox{
         width: 300px;
@@ -234,4 +270,5 @@ img{
     .top .hamburger {
         display: none;
     }
+
 }
