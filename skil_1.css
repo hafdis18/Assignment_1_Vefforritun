@@ -1,3 +1,7 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -9,7 +13,7 @@ body {
 .top{
     background-color: #AED8E6;
     text-align: center;
-    padding-bottom: 15px; /* skoÃƒÂ°a padding ÃƒÂ¡ top betur */
+    padding-bottom: 15px;
     border: solid black 1.5px;
     border-radius: 10px;
 }
@@ -17,14 +21,16 @@ body {
 div button{
     background-color: transparent;
     border: none;
+    margin-left: 5px;
+    font-size: 10px;
 }
 
 div input{
     color: gray;
-    padding: 0.5px,0.5px;
     border: solid 1px;
     border-color: lightgray;
-    
+    padding: 3px;
+    font-size: 10px;
 }
 
 div a{
@@ -34,26 +40,20 @@ div a{
 }
 
 
-h3{
-    white-space: nowrap;
-}
-
 .allPerson{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 1%;
 }
 
 .perBox{
-    width: 20.5%;
     background-color: #AED8E6;
     border: solid black 1.5px;
     border-radius: 10px;
     height: 200px;
     font-size: 10px;
-    /* margin: 2%; */
+    margin: 2%;
 }
 
 .left {
@@ -61,95 +61,86 @@ h3{
     display: inline-block;
 }
 
-
-.left p{
-    font-size: 20px;
-    margin-left: 5px;
-}
-
-
-
 .right {
-    width: 60%;
-    font-size: 16px;
+    margin-top: 2%;
+    width: 70%;
+    font-size: 15px;
     float: right;
-    margin-right: 8px;
 }
 
-span{
+.right p{
+    margin: 7%;
+}
+
+.left p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15%;
     font-weight: 500;
 }
 
 
 header{
-    padding-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 
 img{
-    width: 80%;
+    width: 65%;
     height: auto;
-    margin-left: 10%;
-    margin-top: 5%;
+    margin-left: 20%;
+    margin-top: 7%;
 
 }
 
 .bottom{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .infoBox{
-    display: flex;
     background-color: #AED8E6;
     padding: 30px; 
     border: solid black 1.5px;
     border-radius: 10px;
+    width: 80%;
+    display: flex;
 }
 
-.infoBox > div {
+.AboutUs{
     width: 50%;
+    float: left;
+    text-align: left;
 }
-
 
 .Contact{
+    width: 50%;
+    float: right;
     text-align: right;
 }
 
-.Contact p {
-    margin: 0px 0px 5px 0px;
-}
-
-.Contact a {
-    text-decoration: underline;
-    font-size: initial;
-    text-align: right;
-    margin: 0px 0px 5px 0px;
+.Contact a{
+    margin: 0px;
+    font-size: 16px;
 }
 
 .hamburger{
     display: none;
 }
 
-.name {
+.name p{
     display: none;
 }
 
-.smallsize {
-    display: none;
+span{
+    font-weight: 500;
 }
-
 
 @media (min-width: 1001px){
     .perBox{
-        width: 220px; 
-        flex-direction: row;
+        width: 220px;
         margin: 1%;
-    }
-    .infoBox{
-        width: 800px;
-        height: 200px;
     }
 }
 
@@ -158,43 +149,19 @@ img{
         width: 300px;
         margin: 1.7%;
     }
-     .infoBox{
-         padding: 20px;
-         width: 757px;
-         height: 177px;
-     }
-}
-
-@media (min-width: 651px){
-    .perBox{
-        width:300px;
-        height:200px;
-        flex-direction:row;
-        flex-wrap:wrap;
-
-    }
-    .infoBox{
-        padding: 20px;
-        width: 477px;
-        height: 217px;
-    }
 }
 
 @media (max-width: 650px){
     .perBox{
         width: 400px;
-        /* flex-direction: row; */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     img{
         display: none;
     }
-    .top .hirefire{
+    .hirefire{
         display: none;
     }
-    .top .Search{
+    .Search{
         display: none;
     }
     .left {
@@ -206,26 +173,39 @@ img{
         justify-content: center;
     }
     .right{
-        display: none;
-    }
-    .smallsize{
+        width: 100%;
+        margin-top: 5%;
+        font-size: 20px;
         text-align: center;
-        font-size: 17px;
-        display: block;
     }
-    .smallsize h2 {
-        margin-top: 20px;
+    .right p{
+        margin: 3%;
     }
-    .smallsize p {
-        margin-top: 10px;
-        margin-bottom: 10px;
+    .name p{
+        display: contents;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
     }
 }
 
 @media only print {
     body{
         font-family: 'Ibarra Real Nova', serif;
+
     }
+
+    .top .hirefire{
+        display: block;
+        margin-top: 5px;
+    }
+
+    .top .Search{
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
     .perBox{
         width: 300px;
         margin: 0%;
@@ -235,25 +215,19 @@ img{
     img{
         display: none;
     }
+    .hamburger {
+        display: none;
+    }
+
     header {
-        padding-bottom: 0%;
+        justify-content: center;
+        margin-bottom: 0%;
     }
     .left {
         display: none;
     }
     .right{
-        display: none;
-    }
-    .smallsize{ 
-        display: contents;
-        text-align: center;
-        font-size: 17px;
-    }
-    .smallsize h2 {
-        margin-top: 20px;
-    }
-    .smallsize p {
-        margin-top: 5px;
+        width: 100%;
     }
     .bottom {
         margin-top: 0%;
@@ -261,14 +235,20 @@ img{
     .allPerson {
         margin: 0%;
     }
-    .top .hirefire{
-        display: contents;
+    span{
+        font-weight: bold;
     }
-    .top .Search{
+    .name p{
         display: contents;
-    }
-    .top .hamburger {
-        display: none;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
     }
 
+    input{
+        width: 150px;
+        height: 15px;
+        text-align: left;
+        margin-left: 2px;
+    }
 }
